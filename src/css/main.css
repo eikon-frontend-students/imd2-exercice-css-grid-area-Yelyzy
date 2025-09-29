@@ -202,9 +202,11 @@ video {
     grid-template-areas:
       ".   header"
       "nav main"
-      "nav main"
       "footer footer";
     grid-template-columns: 1fr 2fr;
+  }
+  .header {
+    border-bottom: none;
   }
   .nav ul {
     flex-direction: column;
@@ -216,17 +218,19 @@ video {
 }
 
 @media (min-width: 1200px) {
-  body {
-    margin: 0rem 6.25rem;
-    background-color: #fff;
+  .nav {
+    /* margin-left: 6.25rem; */
+  }
+  .main,
+  .header {
+    /* margin-right: 6.25rem; */
   }
   .container {
     grid-template-areas:
-      ".   header"
-      "nav main"
-      "nav main"
-      "footer footer";
-    grid-template-columns: 1fr 4fr;
+      ". .   header ."
+      ". nav main ."
+      "footer footer footer footer";
+    grid-template-columns: 1fr 2fr 8fr 1fr;
   }
   .nav ul {
     flex-direction: column;
