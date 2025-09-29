@@ -206,12 +206,10 @@ video {
       "footer footer";
     grid-template-columns: 1fr 2fr;
   }
-
   .nav ul {
     flex-direction: column;
     gap: 1.5rem;
   }
-
   .projects-grid {
     grid-template-columns: 1fr 1fr;
   }
